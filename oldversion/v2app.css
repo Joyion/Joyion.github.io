@@ -1,0 +1,394 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+}
+
+
+.box {
+ background-color: white;
+ min-height: 40vh; 
+ width: 100%;
+}
+
+.polygon {
+    margin: 0px auto; 
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  
+    background: linear-gradient(to right, #348AC7, #7474BF); 
+    width: 100%; 
+    height: 100%;
+    clip-path: polygon(0 0%, 100% 15%, 100% 90%, 0% 100%);
+    padding: 60px 0px;
+}
+
+.mycontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    
+    min-height: 40vh;
+    background-color: white;   
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-top: 80px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.title p {
+    display: absolute;
+    text-align: center;
+
+   color: black;
+    margin: 10px 0;
+    font-size: 30px;
+    color: rgb(162, 38, 211);
+    text-shadow: 2px 2px 1px rgb(199, 199, 199);
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.title span {
+    color: rgb(255, 15, 255);
+    font-size: 45px;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+/* navigation */
+
+
+ 
+.burger div {
+        width: 25px;
+        height: 3px;
+        background-color:  rgb(162, 38, 211);
+        margin: 5px;   
+        display: block;
+}
+ 
+ .fab, .far {
+     color: rgb(162, 38, 211);
+     font-size: 30px;
+     margin: 0px 10px;
+     transition: .5s;
+ }
+
+ .navlink {
+     list-style: none;
+     display: flex;
+ }
+
+.navlink a {
+    color: rgb(162, 38, 211);
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a.activelink {
+    color: pink;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 12px;
+}
+
+nav p {
+    z-index: 1;
+}
+
+
+
+.gridcontainer {
+    display: grid;
+    max-width: 100%;
+    justify-content: space-evenly;
+    grid-template-columns: 60% 40%;
+    grid-gap: 0px;
+    padding: 30px;
+
+}
+
+.gridcontainer > div {
+    text-align: center;
+    width: 80%;
+    color: rgb(255, 255, 255);
+    
+    letter-spacing: 2px;
+    line-break: 2px;
+   
+}
+
+.gridcontainer p, a, li {
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+    font-weight: 600;
+}
+
+
+.gridcontainer p {
+    letter-spacing: 0px;
+    line-height: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+.gridcontainer a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 203, 255);
+    text-shadow: 2px 2px 2px black;
+}
+
+.gridcontainer a:hover {
+    color: rgb(255, 34, 255);
+    text-shadow: 2px 2px 2px black;
+}
+
+.gridcontainer h2, h3 {
+    margin-bottom: 20px;
+    color: rgb(252, 103, 214);
+    text-shadow: 2px 2px 0px rgb(243, 230, 242);
+    font-weight: 700;
+    letter-spacing: 3px;
+    
+}
+
+.gridcontainer h2 {
+    font-size: 30px;
+}
+
+.gridcontainer h3 {
+    font-size: 25px;
+}
+
+.gridcontainer li {
+    margin: 10px 0px;
+}
+
+.skills, .mylife {
+    margin-top: 40px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.skills ol, .hobbies ol {
+    list-style: none;
+
+}
+
+.hobbies h3 {
+    margin-top: 50px;
+}
+
+#projects {
+    width: 100%;
+    
+}
+
+#projects h2 {
+    color: rgb(252, 103, 214);
+    text-shadow: 2px 2px 1px rgb(204, 204, 204);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.flexcontainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.flexcontainer > div{
+    min-width: 30%;
+    text-align: center;
+    margin: 40px 1.60%;
+}
+
+.site img {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px 0px;
+    border: 2px solid black;
+}
+
+.site h3 {
+    color: rgb(162, 38, 211);
+    font-size: 25px;
+    text-shadow: 2px 2px 1px rgb(194, 193, 193);
+}
+
+.site a {
+    border: 2px solid rgb(162, 38, 211);
+    color: rgb(162, 38, 211);
+    padding: 5px;
+    text-decoration: none;
+    margin: 0 5px;
+    box-shadow: 1px 1px 1px rgb(192, 192, 192);
+    transition: .5s;
+}
+
+.site a:hover {
+    background-color: rgb(162, 38, 211);
+    color: white;
+}
+
+
+/* MEdia queries */
+
+
+/*
+@media (max-width: 575.98px) { 
+   
+ }
+
+
+@media (max-width: 767.98px) { 
+  
+    
+   
+}
+
+*/ 
+
+@media (max-width: 991.98px) { 
+   
+
+ .fab, .far {
+        font-size: 20px;
+    }
+
+    #bars {
+        display: block;
+    }
+
+    .gridcontainer p, a, li {
+        font-size: 20px;
+    
+    }
+
+    .navlink  {
+        position: absolute;
+        right: 0px;
+        top: 8vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 20vh;
+        width: 100%;
+        background-color: white;
+        margin: 0px;
+        transform: translateY(-200%);
+        transition: transform 0.2s ease-in;
+        opacity: 0;
+       
+        
+    }
+
+    .navlink li {
+        opacity: 0;
+    }
+
+
+
+ }
+
+ @media (min-width: 991.98px) {
+    .burger {
+        display: none;
+    }
+
+
+ }
+
+
+ 
+.nav-active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes slideright {
+    from {
+        opacity: 0;
+        transform: translateX(-20%);
+        
+       
+        
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+       
+    }
+}
+@keyframes slideleft {
+    from {
+        opacity: 0;
+        transform: translateX(20%);
+        
+     ;
+        
+        
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+
+    }
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+       margin-bottom: -50%;
+    }
+
+    to {
+        opacity: 1;
+        margin-bottom: 0%;
+    }
+}
+@keyframes show {
+    from {
+        opacity: 0;
+       
+    }
+
+    to {
+        opacity: 1;
+        
+    }
+}
+
+
