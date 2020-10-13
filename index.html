@@ -5,35 +5,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joyion Timmons</title>
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Font Icons -->
+    <script src="https://kit.fontawesome.com/4837e656e5.js"></script>
 
-    <link href="stylesheets/app.css" rel="stylesheet">
+    <!-- GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="app.css">
+
 </head>
 
 <body>
-    <div class="title">
-        <h1>Joyion Timmons</h1>
-        <h2>Web Developer</h2>
-
-    </div>
-    <hr>
-    <div>
-        <div class="firstHeader">
-            <h3>MY PROJECTS</h3>
+    <nav>
+        <div>
+            <p>
+                <a target="_blank" href="https://github.com/joyion"><i class="fab fa-github"></i></a>
+                <!-- <a target="_blank" href="https://www.linkedin.com/in/joyion-timmons-90836b59/"><i class="fab fa-linkedin-in"></i></a>   -->
+                <a target="_blank" href="https://www.facebook.com/joyion.timmons"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:joyiont@gmail.com"><i class="far fa-envelope"></i></a>
+            </p>
         </div>
-        <div class="hscroll">
-            <div class="projects">
+        <ul class="navlink">
+            <li>
+                <a class="activelink" href="#home">About Me</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <div class="one"></div>
+            <div class="tow"></div>
+            <div class="three"></div>
+        </div>
+    </nav>
+
+
+
+    <div id="home" class="mycontainer">
+        <div class="title">
+            <p>Hello! My name is <span>Joyion Timmons</span></p>
+            <p>I'm a <span>Full Stack Developer</span></p>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="polygon">
+            <div class="gridcontainer">
+                <div class="myLife">
+                    <h2>About Me</h2>
+                    <p>
+                        I'm Full Stack Developer currently living in Los Angeles, CA.
+                        I'm attending West Los Angeles College for Computer Science.
+                    </p>
+                    <div class="hobbies">
+                        <h3>Hobbies</h3>
+                        <ol>
+                            <li><a target="_blank" href="https://en.atleticodemadrid.com">Aupa Atleti!</a></li>
+                            <li><a target="_blank" href="https://vimeo.com/user7218250">Film Production</a></li>
+                            <li><a target="_blank" href="https://www.surfline.com/travel/united-states/california/los-angeles-county/manhattan-beach-surfing-and-beaches/5370082">Surfing</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                        <li>NodeJS</li>
+                        <li>JAVA</li>
+                    </ol>
+                    <ol>
+                        <li>BOOTSTRAP</li>
+                        <li>JQUERY</li>
+                        <li>MONGO DB</li>
+                        <li>MySQL</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="projects">
+        <h2 id="projectTitle">My Projects</h2>
+
+        <div class="flexcontainer">
+            <div class="site">
                 <h3>Black Rose Records</h3>
                 <img src="https://s3.gifyu.com/images/Screen-Recording-2019-09-10-at-03.03.28.27-PM-1.gif" alt="">
                 <div>
                     <a target="_blank" href="https://github.com/Joyion/BlackRoseLabelWebsite">View Code</a>
                     <a target="_blank" href="https://joyion.github.io/BlackRoseLabelWebsite/">View Site</a>
                 </div>
-
-
             </div>
-            <div class="projects">
+            <div class="site">
                 <h3>The Good Surf</h3>
                 <img src="https://s0.gifyu.com/images/TheGoodSurf.gif" alt="">
                 <div>
@@ -41,7 +108,7 @@
                     <a target="_blank" href="https://thegoodsurf.herokuapp.com/">View Site</a>
                 </div>
             </div>
-            <div class="projects">
+            <div class="site">
                 <h3>City Guide: San Francisco</h3>
                 <img src="https://s0.gifyu.com/images/Screen-Recording-2019-08-26-at-10.15.39.89-PM.gif" alt="">
                 <div>
@@ -49,61 +116,31 @@
                     <a target="_blank" href="https://joyion.github.io/CityGuideSanFrancisco">View Site</a>
                 </div>
             </div>
-            <div class="projects">
+            <div class="site">
                 <h3>School Database</h3>
                 <img src="https://s3.gifyu.com/images/SchoolDatabasegif.gif" alt="">
                 <div>
                     <a target="_blank" href="https://github.com/Joyion/JavaFXSchoolDatabase">View Code</a>
+
                 </div>
             </div>
-            <div class="projects">
+            <div class="site">
                 <h3>Hangman</h3>
                 <img src="https://s3.gifyu.com/images/HangmanGif.gif" alt="">
                 <div>
                     <a target="_blank" href="https://github.com/Joyion/JavaFXSchoolDatabase">View Code</a>
+
                 </div>
             </div>
         </div>
 
     </div>
 
-    <div class="secondHeader">
-        <h3>3 Things About Me</h3>
-    </div>
-
-    <div class="hscroll">
-        <div class="projects info">
-            <img src="assets/LA.jpg" alt="Palm Trees">
-            <p>I live in California.</p>
-        </div>
-        <div class="projects">
-            <div>
-                <div class="skills"> 
-                    <i   class="icon fab fa-html5"></i>
-                    <i   class="icon fab fa-css3-alt"></i>
-                    <i class="icon fab fa-react"></i>
-                    <i class="icon fab fa-node"></i>
-                    <i class="icon fab fa-java"></i>
-                </div>
-                <p>I have expreince with React.js, Node.js, MySQL, MongoDB, Java and C++.</p>
-            </div>
-        </div>
-        <div class="projects info">
-            <img src="assets/soccer.jpg" alt="soccer ball">
-            <p>I Love Soccer. </p>
-        </div>
-    </div>
-    <div class="thirdHeader">
-        <h3>Let's Create Together!</h3>
-    </div>
-    <div class="contact">
-        <i class="fab fa-github"></i>
-        <i class="fas fa-envelope-square"></i>
-        <i class="fab fa-linkedin"></i>
-    </div>
 
 
-    <script src="https://kit.fontawesome.com/4837e656e5.js" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+
 </body>
 
 </html>
