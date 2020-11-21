@@ -226,7 +226,7 @@ nav p {
 }
 
 .site img {
-    max-width: 300px;
+    max-width: 400px;
     max-height: 300px;
     margin: 20px 0px;
     border: 2px solid black;
@@ -272,7 +272,13 @@ nav p {
 */ 
 
 @media (max-width: 991.98px) { 
-   
+    .title p {
+        font-size: 25px;
+    }
+
+   .site img {
+       width: 300px;
+   }
 
  .fab, .far {
         font-size: 20px;
