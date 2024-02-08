@@ -1,0 +1,204 @@
+.neon-button {
+    width: 450px;
+    display: flex;
+    height: 125px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.neon .projects a {
+    position: relative;
+    /*display: inline-block;*/
+    padding: 15px 20px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    text-shadow: 2px 2px 1px rgb(240, 22, 236);
+    border: 2px solid pink;
+    box-shadow: 5px 5px 1px pink;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); */
+}
+
+.project-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border: 1px solid black;
+    margin-left: 40px;
+}
+
+
+.projects a:hover {
+    background: white;
+    color: purple;
+    box-shadow: white;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.projects span {
+    position: absolute;
+    display: block;
+
+}
+
+.project-info {
+    width: 450px;
+    height: 200px;
+    border: 3px solid pink;
+    padding: 2px;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+.project-info p {
+    margin-top: 10px;
+}
+
+.neon-button a {
+    position: relative;
+    /*display: inline-block;*/
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    text-shadow: 2px 2px 1px rgb(240, 22, 236);
+    box-shadow: 0 0 5px pink;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); */
+}
+
+.neon-button a:nth-child(2) {
+    filter: hue-rotate(140deg);
+}
+
+.neon-button a:nth-child(3) {
+    filter: hue-rotate(240deg);
+}
+
+.neon-button a:nth-child(4) {
+    filter: hue-rotate(130deg);
+}
+
+.neon-button a:nth-child(4) {
+    color: white;
+    box-shadow: 0 0 5px pink;
+    /* box-shadow: 0 0 5px rgb(255, 255, 255),
+      0 0 25px #dbe4e5,å
+      0 0 50px #e5e5e5,
+      0 0 200px #e8e8e8 */
+}
+
+
+
+.neon-button a:hover {
+    background: white;
+    color: black;
+    box-shadow: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+.neon-button a span {
+    position: absolute;
+    display: block;
+
+}
+
+.neon-button a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, pink);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.neon-button a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, pink);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.neon-button a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, pink);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.neon-button a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, pink);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
