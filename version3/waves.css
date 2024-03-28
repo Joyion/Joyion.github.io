@@ -1,0 +1,353 @@
+.wave div {
+
+    position: absolute;
+    opacity: 1;
+    top: 88%;
+    left: -20%;
+    background-color: #6C51E2;
+    width: 6000px;
+    height: 6000px;
+    border-radius: 48%;
+    transform-origin: 50% 50%;
+    animation: wave1 15s infinite linear alternate;
+    z-index: 2;
+    box-shadow: 2px 2px 2px rgba(155, 12, 187, 0.327),
+        1px 1px 2px rgba(143, 137, 144, 0.374);
+}
+
+.wave div:nth-child(2) {
+    position: absolute;
+    opacity: .7;
+    top: 87%;
+    left: -80%;
+    background-color: #7630ab;
+    border-radius: 45%;
+    transform-origin: 50% 50%;
+    animation: wave2 10s infinite linear alternate;
+    animation-delay: 2s;
+}
+
+.wave div:nth-child(4) {
+    position: absolute;
+    opacity: .6;
+    top: 88%;
+    left: -15%;
+    background-color: rgb(207, 43, 210);
+    border-radius: 42%;
+    animation: wave3 18s infinite linear alternate;
+}
+
+.wave div:nth-child(3) {
+    position: absolute;
+    opacity: .8;
+    top: 80%;
+    left: -120%;
+    background-color: rgb(179, 0, 255);
+    border-radius: 48%;
+    transform-origin: 50% 50%;
+    animation: wave2 20s infinite linear alternate;
+
+}
+
+.wave div:nth-child(5) {
+    position: absolute;
+    opacity: 1;
+    top: 95%;
+    left: -95%;
+    background-color: #6C51E2;
+    border-radius: 48%;
+    transform-origin: 50% 50%;
+    animation: wave1 15s infinite linear alternate;
+
+}
+
+
+
+.topwave div {
+    position: absolute;
+    opacity: 1;
+    bottom: 95%;
+    left: -20%;
+    background-color: #6C51E2;
+    width: 6000px;
+    height: 6000px;
+    border-radius: 48%;
+    transform-origin: 50% 50%;
+    animation: wave1 15s infinite linear alternate;
+    z-index: 2;
+    box-shadow: 2px 2px 2px rgba(155, 12, 187, 0.327),
+        1px 1px 2px rgba(143, 137, 144, 0.374);
+}
+
+.topwave div:nth-child(2) {
+    position: absolute;
+    opacity: .7;
+    bottom: 93%;
+    left: -100%;
+    background-color: #7630ab;
+    border-radius: 45%;
+    transform-origin: 50% 50%;
+    animation: wave2 10s infinite linear alternate;
+    animation-delay: 2s;
+}
+
+.topwave div:nth-child(4) {
+    position: absolute;
+    opacity: .6;
+    bottom: 96%;
+    left: -15%;
+    background-color: rgb(207, 43, 210);
+    border-radius: 42%;
+    animation: wave3 14s infinite linear alternate;
+}
+
+.topwave div:nth-child(3) {
+    position: absolute;
+    opacity: .8;
+    bottom: 92%;
+    left: -50%;
+    background-color: rgb(179, 0, 255);
+    border-radius: 48%;
+    transform-origin: 50% 50%;
+    animation: wave2 20s infinite linear alternate;
+
+}
+
+.topwave div:nth-child(5) {
+    position: absolute;
+    opacity: 1;
+    bottom: 95%;
+    left: -95%;
+    background-color: #6C51E2;
+    border-radius: 48%;
+    transform-origin: 50% 50%;
+    animation: wave1 15s infinite linear alternate;
+
+}
+
+.bottomwave div {
+    position: absolute;
+    opacity: 1;
+    top: 95%;
+    left: -20%;
+    background-color: #6C51E2;
+    width: 6000px;
+    height: 6000px;
+    border-radius: 48%;
+    transform-origin: 50% 50%;
+    animation: wave1 15s infinite linear alternate;
+    z-index: 2;
+    box-shadow: 2px 2px 2px rgba(155, 12, 187, 0.327),
+        1px 1px 2px rgba(143, 137, 144, 0.374);
+}
+
+.bottomwave div:nth-child(2) {
+    position: absolute;
+    opacity: .7;
+    top: 93%;
+    left: -80%;
+    background-color: #7630ab;
+    border-radius: 45%;
+    animation: wave2 10s infinite linear alternate;
+    animation-delay: 2s;
+
+}
+
+.bottomwave div:nth-child(4) {
+    opacity: .6;
+    top: 94%;
+    left: -15%;
+    background-color: rgb(207, 43, 210);
+    border-radius: 42%;
+    animation: wave3 18s infinite linear alternate;
+}
+
+.bottomwave div:nth-child(3) {
+    opacity: .8;
+    top: 93%;
+    left: -120%;
+    background-color: rgb(179, 0, 255);
+    animation: wave2 20s infinite linear alternate;
+
+}
+
+.bottomwave div:nth-child(5) {
+    top: 97%;
+    left: -95%;
+    background-color: #6C51E2;
+    animation: wave1 15s infinite linear alternate;
+
+}
+
+
+
+
+
+
+@keyframes wave1 {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    50% {
+        transform: rotate(360deg);
+
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+
+}
+
+@keyframes wave2 {
+    from {
+        transform: rotate(180deg);
+
+    }
+
+    to {
+        transform: rotate(360deg);
+
+    }
+
+}
+
+@keyframes wave3 {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    to {
+        transform: rotate(180deg);
+
+    }
+
+}
+
+@media only screen and (max-width: 2300px) {
+
+    .wave div,
+    .topwave div,
+    .bottomwave div {
+        width: 3600px;
+        height: 3600px;
+    }
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .wave div,
+    .topwave div,
+    .bottomwave div {
+        width: 2500px;
+        height: 2500px;
+    }
+
+
+
+
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .wave div,
+    .topwave div,
+    .bottomwave div {
+        width: 2000px;
+        height: 2000px;
+    }
+
+    .wave div:nth-child(4) {
+        top: 80%;
+    }
+
+    .topwave div:nth-child(4) {
+        bottom: 88%;
+    }
+
+    .bottomwave div:nth-child() {
+        top: 80%;
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .wave div,
+    .topwave div,
+    .bottomwave div {
+        width: 850px;
+        height: 850px;
+    }
+
+    .wave div:nth-child(1) {
+        top: 87%;
+    }
+
+    .wave div:nth-child(2) {
+        top: 85%;
+    }
+
+    .wave div:nth-child(3) {
+        top: 82%;
+    }
+
+    .wave div:nth-child(4) {
+        top: 83%;
+    }
+
+    .wave div:nth-child(5) {
+        top: 92%;
+
+    }
+
+    .topwave div:nth-child(1) {
+        bottom: 94%;
+    }
+
+    .topwave div:nth-child(2) {
+        bottom: 92%;
+    }
+
+    .topwave div:nth-child(3) {
+        bottom: 90%;
+    }
+
+    .topwave div:nth-child(4) {
+        bottom: 91%;
+    }
+
+
+    .topwave div:nth-child(5) {
+        bottom: 94%;
+
+    }
+
+    .bottomwave div:nth-child(1) {
+        top: 87%;
+    }
+
+    .bottomwave div:nth-child(2) {
+        top: 85%;
+    }
+
+    .bottomwave div:nth-child(3) {
+        top: 82%;
+    }
+
+    .bottomwave div:nth-child(4) {
+        top: 83%;
+    }
+
+    .bottomwave div:nth-child(5) {
+        top: 92%;
+
+    }
+}
