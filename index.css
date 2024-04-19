@@ -422,7 +422,7 @@ body {
     padding: 10px;
 }
 
-.social ul li {
+.social ul li a {
     padding: 40px;
     font-size: 4rem;
     color: white;
