@@ -1,0 +1,492 @@
+@import url("waves.css");
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@import url("title.css");
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FFFDEA;
+    font-family: "Bubblegum Sans", Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 5vh;
+    justify-content: right;
+    align-items: center;
+    /* background-color: rgb(255, 161, 220); */
+    background: hsla(251, 71%, 60%, 1);
+
+
+    z-index: 200;
+}
+
+.nav-active {
+    height: 300px;
+}
+
+.nav-links,
+.burger-icon {
+    margin-right: 10px;
+}
+
+.navbar a {
+    /* color: rgb(150, 38, 230); */
+    color: white;
+    /* color: hsla(251, 71%, 60%, 1); */
+    font-size: 24px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-bottom: 7px;
+    opacity: 100;
+}
+
+.burger-bar {
+    display: none;
+}
+
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    font-size: 14px;
+}
+
+.burger-icon div {
+    margin: 4px;
+    border-bottom: 3px solid rgb(150, 38, 230);
+
+}
+
+@keyframes nav-appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+/** Home Page **/
+
+#Home {
+    height: 50vh;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.title {
+    animation: appear 2s ease-in forwards, float 5s ease-in-out infinite;
+}
+
+.title h1 {
+    /* color: rgb(150, 38, 230); */
+    color: hsla(251, 71%, 60%, 1);
+    letter-spacing: 4px;
+    text-shadow: 5px 5px rgb(255, 255, 255);
+    font-size: 48px;
+    top: 50%;
+
+}
+
+.highlight span {
+
+    color: #f972e9;
+    text-shadow: 3px 3px 1px rgb(169, 56, 255);
+    font-size: 84px;
+}
+
+.name {
+    position: relative;
+    top: 80px;
+    text-align: center;
+    /* animation: float 5s ease-in-out infinite, appear 2s ease-in forwards; */
+}
+
+.prof {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    /* animation: float 5s ease-in-out infinite, appear 2s ease-in forwards; */
+}
+
+
+
+/** About me section **/
+
+#About-Me {
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    background: hsla(251, 71%, 60%, 1);
+
+
+
+
+}
+
+
+.about-me-section {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about-me-section h1 {
+    margin-top: 20px;
+    font-size: 42px;
+    letter-spacing: 10px;
+    text-align: center;
+    color: white;
+
+    text-shadow: 1px 1px 1px black, 5px 5px 2px #ffa4f9;
+
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.bio {
+    width: 90%;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+
+.skills,
+.hobbies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+
+}
+
+.skills h2,
+.hobbies h2 {
+    font-size: 32px;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 1px black, 3px 3px 2px #ffa4f9;
+}
+
+
+.skills ul,
+.hobbies ul a {
+    list-style: none;
+    margin-top: 80px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 1px black;
+}
+
+.skills li,
+.hobbies li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px 5px;
+}
+
+.skills i,
+.hobbies a i {
+    font-size: 28px;
+}
+
+.skills p,
+.hobbies a p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.skills li:nth-child(odd),
+.hobbies li:nth-child(even) {
+    position: relative;
+    top: -20px;
+}
+
+.skills li,
+.hobbies li {
+    float: left;
+    padding: 5px;
+}
+
+
+/** Project section **/
+
+#Projects {
+    /* scroll-snap-align: start; */
+    width: 100vw;
+    min-height: 1000px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.project {
+    min-width: 30%;
+}
+
+.project-row {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: row;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+#Projects h1 {
+    font-size: 42px;
+    color: rgb(150, 38, 230);
+    color: hsla(251, 71%, 60%, 1);
+    /* color: #e251e2; */
+    margin: 50px 0px;
+    text-shadow: 1px 1px 2px black, 7px 7px 1px pink;
+    text-align: center;
+}
+
+
+.neon-button {
+    width: 375px;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.project-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.project-card h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: rgb(150, 38, 230);
+    color: hsla(251, 71%, 60%, 1);
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 2px;
+
+}
+
+.project a {
+    position: relative;
+    /*display: inline-block;*/
+    padding: 5px 5px;
+    color: rgb(150, 38, 230);
+    color: hsla(251, 71%, 60%, 1);
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 8px;
+    overflow: hidden;
+    text-shadow: 1px 1px 1px black;
+    ;
+    border: 2px solid hsla(251, 71%, 60%, 1);
+    ;
+    ;
+    box-shadow: 3px 3px 1px hsla(251, 71%, 60%, 1);
+    ;
+    ;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); */
+}
+
+
+.project a:hover {
+    background: rgb(150, 38, 230);
+    color: rgb(234, 226, 226);
+    border: 5px solid rgb(150, 38, 230);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    box-shadow: none;
+    border: 3px 3px 25px black;
+}
+
+.project span {
+    position: absolute;
+    display: block;
+
+}
+
+.project-info {
+    padding: 2px;
+    color: rgb(150, 38, 230);
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0px black;
+
+}
+
+.project-info img {
+    width: 300px;
+    height: 250px;
+    justify-content: center;
+    border: 4px solid rgb(150, 38, 230);
+}
+
+.project-info p {
+    margin-top: 4px;
+    text-align: center;
+}
+
+
+/** Contact Section **/
+
+#Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(245, 202, 210); */
+    background: hsla(251, 71%, 60%, 1);
+
+
+    width: 100%;
+    height: 95vh;
+
+}
+
+
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social h2,
+.contact-title h2 {
+    color: white;
+    text-align: left;
+    font-size: 12rem;
+    margin-left: 3px;
+    text-shadow: 1px 1px 1px rgb(246, 129, 149), 2px 2px 2px rgb(246, 129, 149), 3px 3px 3px rgb(245, 129, 149), 4px 4px 4px rgb(245, 129, 149)
+}
+
+.contact-title {
+    display: block;
+}
+
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 10px;
+}
+
+.social ul li {
+    padding: 40px;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px rgb(246, 129, 149), 2px 2px 2px rgb(246, 129, 149), 3px 3px 3px rgb(245, 129, 149), 4px 4px 4px rgb(245, 129, 149)
+}
+
+
+
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger-bar {
+        display: inline;
+    }
+
+    .nav a {
+        animation: none;
+        opacity: 100%;
+    }
+
+
+    .bio {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .list-section {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .skills,
+    .hobbies {
+        margin-top: 0px;
+        justify-content: center;
+    }
+
+    .skills ul,
+    .hobbies ul a {
+        list-style: none;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        color: white;
+        text-decoration: none;
+        text-shadow: 1px 1px 2px black, 4px 4px 2px #e251e2, 5px 5px 2px #e251e2;
+    }
+
+
+    .skills i,
+    .hobbies a i {
+        font-size: 24px;
+    }
+
+    .skills p,
+    .hobbies a p {
+        font-size: 12px;
+    }
+
+
+
+}
+
+@media (max-height: 925px) {}
