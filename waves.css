@@ -9,7 +9,10 @@
     height: 6000px;
     border-radius: 48%;
     transform-origin: 50% 50%;
-    animation: wave1 15s infinite linear alternate;
+    /* animation: wave1 10s 5s linear reverse; */
+    animation-name: wave2;
+    animation-duration: 20s;
+
     z-index: 2;
     box-shadow: 2px 2px 2px rgba(155, 12, 187, 0.327),
         1px 1px 2px rgba(143, 137, 144, 0.374);
@@ -23,8 +26,10 @@
     background-color: #7630ab;
     border-radius: 45%;
     transform-origin: 50% 50%;
-    animation: wave2 10s infinite linear alternate;
-    animation-delay: 2s;
+    /* animation: wave2 10s 5s linear reverse; */
+    animation-name: wave2;
+    animation-duration: 20s;
+
 }
 
 .wave div:nth-child(4) {
@@ -34,7 +39,10 @@
     left: -15%;
     background-color: rgb(207, 43, 210);
     border-radius: 42%;
-    animation: wave3 18s infinite linear alternate;
+    /* animation: wave3 10s 5s linear reverse; */
+    animation-name: wave3;
+    animation-duration: 20s;
+
 }
 
 .wave div:nth-child(3) {
@@ -45,7 +53,9 @@
     background-color: rgb(179, 0, 255);
     border-radius: 48%;
     transform-origin: 50% 50%;
-    animation: wave2 20s infinite linear alternate;
+    animation-name: wave2;
+    animation-duration: 20s;
+
 
 }
 
@@ -57,130 +67,10 @@
     background-color: #6C51E2;
     border-radius: 48%;
     transform-origin: 50% 50%;
-    animation: wave1 15s infinite linear alternate;
+    animation-name: wave1;
+    animation-duration: 20s;
 
 }
-
-
-
-.topwave div {
-    position: absolute;
-    opacity: 1;
-    bottom: 95%;
-    left: -20%;
-    background-color: #6C51E2;
-    width: 6000px;
-    height: 6000px;
-    border-radius: 48%;
-    transform-origin: 50% 50%;
-    animation: wave1 15s infinite linear alternate;
-    z-index: 2;
-    box-shadow: 2px 2px 2px rgba(155, 12, 187, 0.327),
-        1px 1px 2px rgba(143, 137, 144, 0.374);
-}
-
-.topwave div:nth-child(2) {
-    position: absolute;
-    opacity: .7;
-    bottom: 93%;
-    left: -100%;
-    background-color: #7630ab;
-    border-radius: 45%;
-    transform-origin: 50% 50%;
-    animation: wave2 10s infinite linear alternate;
-    animation-delay: 2s;
-}
-
-.topwave div:nth-child(4) {
-    position: absolute;
-    opacity: .6;
-    bottom: 96%;
-    left: -15%;
-    background-color: rgb(207, 43, 210);
-    border-radius: 42%;
-    animation: wave3 14s infinite linear alternate;
-}
-
-.topwave div:nth-child(3) {
-    position: absolute;
-    opacity: .8;
-    bottom: 92%;
-    left: -50%;
-    background-color: rgb(179, 0, 255);
-    border-radius: 48%;
-    transform-origin: 50% 50%;
-    animation: wave2 20s infinite linear alternate;
-
-}
-
-.topwave div:nth-child(5) {
-    position: absolute;
-    opacity: 1;
-    bottom: 95%;
-    left: -95%;
-    background-color: #6C51E2;
-    border-radius: 48%;
-    transform-origin: 50% 50%;
-    animation: wave1 15s infinite linear alternate;
-
-}
-
-.bottomwave div {
-    position: absolute;
-    opacity: 1;
-    top: 95%;
-    left: -20%;
-    background-color: #6C51E2;
-    width: 6000px;
-    height: 6000px;
-    border-radius: 48%;
-    transform-origin: 50% 50%;
-    animation: wave1 15s infinite linear alternate;
-    z-index: 2;
-    box-shadow: 2px 2px 2px rgba(155, 12, 187, 0.327),
-        1px 1px 2px rgba(143, 137, 144, 0.374);
-}
-
-.bottomwave div:nth-child(2) {
-    position: absolute;
-    opacity: .7;
-    top: 93%;
-    left: -80%;
-    background-color: #7630ab;
-    border-radius: 45%;
-    animation: wave2 10s infinite linear alternate;
-    animation-delay: 2s;
-
-}
-
-.bottomwave div:nth-child(4) {
-    opacity: .6;
-    top: 94%;
-    left: -15%;
-    background-color: rgb(207, 43, 210);
-    border-radius: 42%;
-    animation: wave3 18s infinite linear alternate;
-}
-
-.bottomwave div:nth-child(3) {
-    opacity: .8;
-    top: 93%;
-    left: -120%;
-    background-color: rgb(179, 0, 255);
-    animation: wave2 20s infinite linear alternate;
-
-}
-
-.bottomwave div:nth-child(5) {
-    top: 97%;
-    left: -95%;
-    background-color: #6C51E2;
-    animation: wave1 15s infinite linear alternate;
-
-}
-
-
-
 
 
 
@@ -190,37 +80,38 @@
 
     }
 
-    50% {
+    100% {
         transform: rotate(360deg);
 
     }
 
-    100% {
+    /* 100% {
         transform: rotate(90deg);
-    }
+    } */
 
 }
 
 @keyframes wave2 {
-    from {
+    0% {
         transform: rotate(180deg);
 
     }
 
-    to {
+    100% {
         transform: rotate(360deg);
 
     }
 
+
 }
 
 @keyframes wave3 {
-    from {
+    0% {
         transform: rotate(0deg);
 
     }
 
-    to {
+    100% {
         transform: rotate(180deg);
 
     }
