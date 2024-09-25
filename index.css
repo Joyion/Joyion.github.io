@@ -45,7 +45,7 @@ body {
     margin-right: 40px;
 }
 
-.nav-links a {
+.link {
     margin-right: 60px;
     text-decoration: none;
     color: white;
@@ -73,6 +73,11 @@ body {
     top: 0%;
 }
 
+.active-link {
+    color: pink;
+    text-shadow: 1px 1px 1px black;
+    font-size: 28px;
+}
 
 
 
