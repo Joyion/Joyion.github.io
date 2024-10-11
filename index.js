@@ -19,6 +19,13 @@ let observerOptions = {
 }
 
 
+aLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+        navLinkSection.classList.toggle("nav-closed")
+        console.log("Open");
+    })
+})
+
 const observerCallback = ((entries) => {
     entries.forEach((entry) => {
         // console.log(entry.target);
